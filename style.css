@@ -1,0 +1,241 @@
+*{
+  font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .navbar{
+    display:flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+
+  }
+#logo{
+  width: 183px;
+  
+}
+
+ul li{
+  list-style:none;
+  display: inline;
+  margin: 10px 30px;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+}
+.link:hover{ 
+  color:red;
+}
+
+.title{
+  margin-left: 8%;
+  margin-top: 13%;
+}
+.title h1{
+  font-size: 65px;
+  font-weight: 600;
+
+}
+#lastname{
+  color: orange;
+}
+.title p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.title a{
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 22px 45px;
+  border-radius: 7px;
+  font-size: 23px;
+  font-weight: 300;
+  display: inline-block;
+
+}
+.images{
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+}
+.imaggroup{
+  position: absolute;
+  height: 100%;
+  bottom:0px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s,left 2s;
+}
+.images:hover #shape{
+  bottom: 70px;
+}
+.images:hover #girl{
+  left: 15px;
+}
+#About{
+  margin: 13% 8% 0px 8%;
+}
+.heading{
+  text-align: center;
+}
+.heading h1{
+  font-size: 40px;
+  font-weight: 500;
+}
+.heading span{
+  font-size: 18px;
+  color: green;
+}
+.about-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 50px;
+  margin-top:5%;
+}
+.about-img img{
+  width: 81%;
+}
+.about-Details p{
+  font-size: 25px;
+}
+.information{
+  margin-top: 20px;
+}
+.info-box{
+  margin-bottom: 2rem;
+  font-size: 25px;
+}
+.info-box span{
+  margin-left: 10px;
+}
+#Skill{
+  margin: 8% 8% 0px 8%;
+}
+.Skill_container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 50px;
+  margin-top: 4%;
+}
+.skill_image img{
+  width: 91%;
+  margin-left: 4rem;
+}
+.progress_bar{
+  margin-top: 2rem;
+}
+.bar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0px;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.bar-container h3{
+  font-size: 20px;
+  font-weight: 600;
+}
+.bar-container span{
+  font-size: 20px;
+  font-weight: 600;
+}
+.bar{
+  width: 100%;
+  height: 0.5rem;
+  background-color: black;
+  border-radius: 10px;
+  position:absolute;
+  bottom:1px;
+}
+.HTML-bar{
+  background-color: orange;
+  width: 95%;
+}
+.CSS-bar{
+  background-color: orange;
+  width:88%;
+}
+.JS-bar{
+  background-color: orange;
+  width:89%;
+}
+.REACT-bar{
+  background-color: orange;
+  width:85%;
+}
+.icon-set{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+.icon,.up-arrow{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+  border-radius: 50%;
+}
+.icon:hover{
+background-image: linear-gradient(to bottom right,yellow ,orange);
+}
+.icon i{
+  font-size: 30px;
+  color: black;
+}
+.icon:hover i{
+  color: white;
+  animation: shake 0.8s;
+}
+@keyframes shake{
+  10%{
+transform:rotate(15deg);
+  }
+   20%{
+    transform:rotate(-15deg);
+   }
+   30%{
+    transform:rotate(15deg);
+   }
+   40%{
+    transform:rotate(-15deg);
+   }
+
+  }
+
+footer {
+  margin: 3rem 0px;
+}
+  footer p{
+    font-size: 20px;
+text-align:center;
+font-weight: 800;
+}
+.up-arrow{
+  background-image: linear-gradient(to bottom right,rgb(235, 231, 20),rgba(219, 75, 8, 0.836));
+  float: right;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+html{
+  scroll-behavior: smooth;
+}
